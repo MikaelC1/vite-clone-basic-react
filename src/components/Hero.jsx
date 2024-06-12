@@ -21,7 +21,7 @@ export default function Hero(){
                 <h1 className=""> Next Generation Frontend Tooling</h1>
                 <h2>Get ready for a development environment that can finally catch up with you.</h2>
 
-                <div className="button-area"> 
+                <div className="buttonArea"> 
                     {buttons.map((button) => {
                         return(
                             <button key={`button-${button.text}`}>{button.info}</button>
@@ -29,9 +29,12 @@ export default function Hero(){
                         
                     })}
                 </div>
-               
             </article>
-            <img  src="https://vitejs.dev/logo-with-shadow.png" />
+            <div id="logoContainer">
+                <div></div>
+                <img  src="https://vitejs.dev/logo-with-shadow.png" />
+            </div>
+            
         </section>
         
     )

@@ -26,9 +26,10 @@ main {
   place-items: center;
 }
 
-#hero img {
-  width: 380px;
-  object-fit: cover;
+#main span {
+  background: -webkit-linear-gradient(top left, #48C8FF, #BD34FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #main span, h1 {
@@ -36,13 +37,14 @@ main {
   font-weight: bold;
   padding: 0;
   margin: 0;
+  line-height: 1.2;
 }
 
 #main h2 {
   color: #9898A0
 }
 
-.button-area {
+.buttonArea {
   width: 100%;
   display: flex;
   align-items: center;
@@ -51,17 +53,40 @@ main {
 }
 
 
-.button-area button{
+.buttonArea button{
   color: #DFDFD6;
   background-color: #32363F;
   border: none;
   border-radius: 25px;
   height: 50px;
-  padding: 0px 25px;
-  font-size: 13px;
+  padding: 0px 22px;
+  font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 200ms;
 }
 
+.buttonArea button:hover{
+  background-color: #515764;
+  
+}
+
+.buttonArea button:first-child {
+  background-color: #747BFF; /* Color diferente para el primer botón */
+}
+
+.buttonArea button:first-child:hover {
+  background-color: #9ea2ff; /* Color diferente para el primer botón en hover */
+}
+
+.buttonArea button:last-child {
+  background-color: #747BFF; /* Color diferente para el último botón */
+}
+
+.buttonArea button:last-child:hover {
+  background-color: #989dff; /* Color diferente para el último botón en hover */
+}
 
 .card {
   max-width: 370px;
@@ -83,4 +108,29 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   padding: 20px 0px
+}
+
+#logoContainer {
+  position: relative;
+}
+
+#logoContainer div{
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 200px;
+  filter: blur(90px);
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #48C8FF, #BD34FE);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#logoContainer img {
+  position: relative;
+  width: 380px;
+  object-fit: cover;
+  z-index: 2;
 }
