@@ -1,0 +1,86 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  min-height:100dvh;
+  background-color: #1B1B1F;
+  color: #DFDFD6;
+}
+
+main {
+  width: full;
+  max-width: 1200px;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+#hero img {
+  width: 380px;
+  object-fit: cover;
+}
+
+#main span, h1 {
+  font-size: 60px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+#main h2 {
+  color: #9898A0
+}
+
+.button-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+.button-area button{
+  color: #DFDFD6;
+  background-color: #32363F;
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  padding: 0px 25px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+.card {
+  max-width: 370px;
+  height: 200px;
+  background-color: #202127;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.card div {
+  padding: 10px;
+  background-color: #2B2F36;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+.cardSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 20px 0px
+}
