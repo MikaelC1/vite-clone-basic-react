@@ -100,14 +100,15 @@ main {
   padding: 10px;
   background-color: #2B2F36;
   width: fit-content;
-  border-radius: 20px;
+  border-radius: 7px;
+  font-size: 20px;
 }
 
 .cardSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  padding: 20px 0px
+  padding: 20px 0px;
 }
 
 #logoContainer {
